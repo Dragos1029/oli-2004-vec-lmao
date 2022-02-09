@@ -42,13 +42,13 @@ void citeste() {
 
 int main()
 {
-    citeste();
-    genereazaNr();
-    while (nrGen > 9)
+    citeste();              //citim din fisier si punem in vec
+    genereazaNr();          //generam nr folosind valorile din vec
+    while (nrGen > 9)       //repetam pana cand gasim nr. cerut
     {
-        resetVec();
-        citesteVec(nrGen);
-        genereazaNr();
+        resetVec();         //resetam vec la 0
+        citesteVec(nrGen);  //citim din nr. si punem in vec
+        genereazaNr();      //generam un nr. nou
     }
     out << nrGen;
 }
